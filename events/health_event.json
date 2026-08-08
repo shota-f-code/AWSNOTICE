@@ -1,0 +1,21 @@
+{
+  "version": "0",
+  "id": "775a0243-2984-48f1-807e-001d29f24510",
+  "detail-type": "AWS Health Event",
+  "source": "aws.health",
+  "account": "123456789012",
+  "time": "2026-08-07T00:00:00Z",
+  "region": "ap-northeast-1",
+  "resources": [
+    "i-0123456789abcdef0"
+  ],
+  "detail": {
+    "eventTypeCode": "AWS_EC2_OPERATIONAL_ISSUE",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "We are investigating performance degradation issues affecting EC2 instances in the ap-northeast-1 region."
+      }
+    ]
+  }
+}
