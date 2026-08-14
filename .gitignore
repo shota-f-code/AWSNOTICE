@@ -4,6 +4,7 @@ __pycache__
 .venv
 *.egg-info
 .env
+AWSNOTICE.drawio
 
 # CDK asset staging directory
 .cdk.staging
