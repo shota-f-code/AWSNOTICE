@@ -27,13 +27,15 @@
 
 ### 基本コマンド
 
-仮想環境のセットアップおよび依存関係の同期
->uv sync
+```bash
+# 仮想環境のセットアップおよび依存関係の同期
+uv sync
 
-パッケージの追加
->uv add <package_name>
+# パッケージの追加
+uv add <package_name>
 
-CDK コマンドの実行 (cdk.json 経由で uv run が使用される)
->cdk synth
+# CDK コマンドの実行 (cdk.json 経由で uv run が使用される)
+cdk synth
 cdk diff
 cdk deploy
+```
