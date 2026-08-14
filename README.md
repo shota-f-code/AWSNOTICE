@@ -8,11 +8,11 @@
 ---
 
 ## 2. アーキテクチャ構成
-1. **AWS Health**: イベント（障害・計画メンテナンス等）の発生源
-2. **Amazon EventBridge**: AWS Health イベントを検知しターゲット（Lambda）へルーティング
-3. **AWS Lambda**: イベントメッセージを整形し、外部サービスへ API/Webhook 経由で送信
-4. **AWS Secrets Manager**: Slack Webhook URL や Backlog API キー等の機密情報を安全に保持
-5. **Slack / Backlog**: 最終的な通知・課題起票先
+1. **AWS Health**: イベントの発生源
+2. **Amazon EventBridge**: AWS Health イベントを検知して Lambda を起動
+3. **AWS Lambda**: イベント内容を受け取り, Bedrock 呼び出し＆通知処理を実行
+4. **Amazon Bedrock(Claude 4.5 Haiku)**: 通知本文を「概要・緊急度・対応策」の3項目に日本語要約
+5. **Backlog / Slack**: API 経由で課題を自動起票、または Webhook で通知
 
 ---
 
