@@ -1,4 +1,4 @@
-# AWS Health 通知パイプライン (AWSNOTICE)
+# AWS Health 自動通知システム
 
 ## 1. 概要
 本プロジェクトは、AWS Health で発生した各種イベント（メンテナンス、障害情報等）を検知し、EventBridge および Lambda を介して Slack および Backlog へ自動通知する仕組みを AWS CDK を用いてコード化（IaC化）するものである。
